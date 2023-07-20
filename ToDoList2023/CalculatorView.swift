@@ -21,7 +21,7 @@ struct CalculatorView: View {
     
     var body: some View {
         ZStack{
-            Color(red: 255/255, green: 179/255, blue: 0/255)
+            Color(red: 255/255, green: 214/255, blue: 69/255)
                 .ignoresSafeArea()
             ScrollView{
                 VStack {

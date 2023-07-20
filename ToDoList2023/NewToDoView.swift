@@ -10,11 +10,11 @@ struct NewToDoView: View {
     
     var body: some View {
             VStack {
-                Text("Add a new task")
+                Text("Add a new budgeting goal")
                     .font(.title)
                     .fontWeight(.bold)
                     .padding(.vertical)
-                TextField("Name of Task", text: $title)
+                TextField("Name Your Goal", text: $title)
                     .textFieldStyle(.roundedBorder)
                     .padding()
                 

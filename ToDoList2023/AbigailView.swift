@@ -13,48 +13,52 @@ struct AbigailView: View {
  @State private var transportationInput: String = ""
  @State private var miscellaneousInput: String = ""
  @State private var showPieChart: Bool = false
- var body: some View {
-  ScrollView {
-   VStack {
-    Text("Spending Tracker")
-     .font(.title)
-     .padding()
-    TextField("Entertainment", text: $entertainmentInput)
-     .padding()
-     .textFieldStyle(RoundedBorderTextFieldStyle())
-    TextField("Fashion/Beauty", text: $fashionInput)
-     .padding()
-     .textFieldStyle(RoundedBorderTextFieldStyle())
-    TextField("Food/Drinks", text: $foodInput)
-     .padding()
-     .textFieldStyle(RoundedBorderTextFieldStyle())
-    TextField("Transportation", text: $transportationInput)
-     .padding()
-     .textFieldStyle(RoundedBorderTextFieldStyle())
-    TextField("Miscellaneous", text: $miscellaneousInput)
-     .padding()
-     .textFieldStyle(RoundedBorderTextFieldStyle())
-    Button(action: {
-     createPieChart()
-    }) {
-     Text("Generate Pie Chart")
-      .padding()
-      .background(Color.blue)
-      .foregroundColor(.white)
-      .cornerRadius(10)
+    var body: some View {
+        ZStack{
+            Color(red: 228.0/255.0, green: 250.0/255.0, blue: 192.0/255.0)
+                .ignoresSafeArea()
+            ScrollView {
+                VStack {
+                    Text("Spending Tracker")
+                        .font(.title)
+                        .padding()
+                    TextField("Entertainment", text: $entertainmentInput)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("Fashion/Beauty", text: $fashionInput)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("Food/Drinks", text: $foodInput)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("Transportation", text: $transportationInput)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("Miscellaneous", text: $miscellaneousInput)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    Button(action: {
+                        createPieChart()
+                    }) {
+                        Text("Generate Pie Chart")
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    .padding()
+                    if showPieChart {
+                        PieChartView(entertainmentInput: entertainmentInput,
+                                     fashionInput: fashionInput,
+                                     foodInput: foodInput,
+                                     transportationInput: transportationInput,
+                                     miscellaneousInput: miscellaneousInput)
+                    }
+                }
+                .padding(.bottom)
+            }
+        }
     }
-    .padding()
-    if showPieChart {
-     PieChartView(entertainmentInput: entertainmentInput,
-            fashionInput: fashionInput,
-            foodInput: foodInput,
-            transportationInput: transportationInput,
-            miscellaneousInput: miscellaneousInput)
-    }
-   }
-   .padding(.bottom)
-  }
- }
  func createPieChart() {
   showPieChart = true
  }

@@ -71,6 +71,7 @@ struct HomeView: View {
                                     NavigationLink(destination: CalculatorView()) {
                                         Image(systemName: "plus.slash.minus")
                                             .foregroundColor(Color.indigo)
+                                        Spacer()
                                         //    Text("Calculator")
                                     }
                                     NavigationLink(destination: ResourcesView()) {
@@ -99,9 +100,6 @@ struct HomeView: View {
     }
     
 }
-
-
-
 
 
 

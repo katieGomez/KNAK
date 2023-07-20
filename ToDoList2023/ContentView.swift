@@ -12,8 +12,8 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Color(.white)
-                .ignoresSafeArea()
+           // Color(red: 255/255, green: 221/255, blue: 108/255)
+               // .ignoresSafeArea()
             VStack {
                 HStack {
                     Text("Budget Checklist")
