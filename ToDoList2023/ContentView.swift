@@ -16,7 +16,7 @@ struct ContentView: View {
                 .ignoresSafeArea()
             VStack {
                 HStack {
-                    Text("To Do List")
+                    Text("Budget Checklist")
                         .font(.system(size: 40))
                         .fontWeight(.black)
                     Spacer()

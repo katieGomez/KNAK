@@ -15,6 +15,7 @@
 		B26C60492A194FDE0019C26E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26C60482A194FDE0019C26E /* Preview Assets.xcassets */; };
 		B26C606C2A19509A0019C26E /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C606B2A19509A0019C26E /* ToDoItem.swift */; };
 		B26C606E2A1957B50019C26E /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C606D2A1957B50019C26E /* NewToDoView.swift */; };
+		BD90366B2A699B7A00C4E2A7 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90366A2A699B7A00C4E2A7 /* CalculatorView.swift */; };
 		BDC6506E2A688FAF007B9009 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6506D2A688FAF007B9009 /* HomeView.swift */; };
 		BDC650702A688FDE007B9009 /* AbigailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6506F2A688FDE007B9009 /* AbigailView.swift */; };
 		BDC650722A689188007B9009 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC650712A689188007B9009 /* ResourcesView.swift */; };
@@ -49,6 +50,7 @@
 		B26C60582A194FDE0019C26E /* KNAKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KNAKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26C606B2A19509A0019C26E /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		B26C606D2A1957B50019C26E /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
+		BD90366A2A699B7A00C4E2A7 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		BDC6506D2A688FAF007B9009 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BDC6506F2A688FDE007B9009 /* AbigailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbigailView.swift; sourceTree = "<group>"; };
 		BDC650712A689188007B9009 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				BDC6506D2A688FAF007B9009 /* HomeView.swift */,
 				BDC650712A689188007B9009 /* ResourcesView.swift */,
 				BDC6506F2A688FDE007B9009 /* AbigailView.swift */,
+				BD90366A2A699B7A00C4E2A7 /* CalculatorView.swift */,
 				B26C60432A194FDB0019C26E /* ContentView.swift */,
 				B260CA842A19E51F00ED91F9 /* Persistence.swift */,
 				B26C606D2A1957B50019C26E /* NewToDoView.swift */,
@@ -259,6 +262,7 @@
 				BDC6506E2A688FAF007B9009 /* HomeView.swift in Sources */,
 				B26C60422A194FDB0019C26E /* ToDoList2023App.swift in Sources */,
 				B26C606C2A19509A0019C26E /* ToDoItem.swift in Sources */,
+				BD90366B2A699B7A00C4E2A7 /* CalculatorView.swift in Sources */,
 				B260CA852A19E51F00ED91F9 /* Persistence.swift in Sources */,
 				B260CA882A19E7A700ED91F9 /* ToDoList2023.xcdatamodeld in Sources */,
 				B26C606E2A1957B50019C26E /* NewToDoView.swift in Sources */,
